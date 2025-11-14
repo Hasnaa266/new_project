@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    color:white;
+    background-image: url(../img/baner1.png);
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    padding: 70px;
+    height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.hero{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   margin-top: 50px;
+}
+.contact{
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+    width: 80%;
+    max-width: 1200px;
+    gap:50px;
+     direction: rtl;
+
+}
+
+.text p{
+    font-family: "Cairo", sans-serif;
+    font-weight:700;
+   margin-bottom: 120px;
+   font-size: 20px;
+}
+.header-button{
+    background-color: rgba(233, 146, 57, 1);
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    border: none;
+    color: white;
+    border:none;
+    border-radius: 8px;
+   
+    position:absolute;
+    bottom: 80px;
+}
+
+.image{
+
+    position: relative;
+    width: 1800px;
+    height:400px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -100px;
+}
+.image-item{
+   position: absolute;
+   right: 5%;
+   top:50%;
+   transform-origin: top right;
+   width: 100%;
+   height: auto;
+   border: none;
+   border-radius: 12px;
+  
+}
+.first{
+   z-index: 40; 
+   width: 80%;
+   transform: translateY(-45%) rotate(0deg);
+   right:80px;
+  
+   
+}
+.scound{
+   
+z-index: 20;
+width: 75%;
+transform: translateX(30%) translateY(-50%) ;
+right: 45px;
+
+}
+.third{
+    z-index: 10;
+    width: 70%;
+  
+    transform: translateX(120PX) translateY(-40%) ;
+    right: 8px;
+    top:175px;
+}
+.image-item img {
+display: block;
+width: 100%;
+height: auto;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+@media (max-width: 850px) {
+    .head {
+        padding: 40px 20px;
+        height: auto;
+    }
+    
+   
+    .contact {
+        flex-direction: column; 
+        text-align: center;
+        width: 100%;
+    }
+    
+   
+    .text {
+        order: 1; 
+        max-width: 100%;
+    }
+    
+    .text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+  
+    .header-button {
+        align-self: center;
+       margin-bottom: -90px;
+    }
+    .image-item,.image{
+        display: none;
+    }
+
+}

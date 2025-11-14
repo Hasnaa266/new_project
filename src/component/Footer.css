@@ -1,0 +1,159 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+.main {
+    background-color:rgba(61, 70, 77, 1);
+     color: rgba(255, 255, 255, 1);; 
+    font-family: 'Cairo', sans-serif;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content {
+    direction: rtl;
+    display: flex;
+    justify-content:space-around;
+}
+
+.logo-title{
+    margin-bottom: 180px;
+    margin-right: 130px;
+}
+.logo-text{
+    margin-right: -200px;
+}
+.subtitle{
+    padding-top: 30px;
+    font-weight: 500;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li {
+    margin-bottom: 10px;
+    
+}
+.links-column,.policy-column{
+width:250px
+}
+.footer-links a {
+    color: rgba(255, 255, 255, 1);
+
+    text-decoration: none;
+    transition: color 0.3s;
+
+   font-weight: 600;
+}
+.footer-links a:hover {
+    color: rgba(233, 146, 57, 1);
+}
+.link-arrow {
+    color: rgba(233, 146, 57, 1);
+    margin-left: 5px;
+    font-weight: bold;
+}
+.social-icons i{
+    background-color: white;
+    color: rgba(233, 146, 57, 1);
+    border: 2px ;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+.footer-bottom-bar {
+    padding: 20px 5%;
+   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.payment-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    padding-top: 10px;
+}
+.contact-info li{
+    list-style: none;
+    text-decoration: none;
+   
+}
+.contact-info{
+padding-right: 10px;
+width: 350px;
+
+}
+.column-title{
+    text-align: right;
+   
+}
+.contact-icon i{
+    color:  rgba(233, 146, 57, 1);
+}
+@media (max-width: 992px) {
+   
+    .footer-content {
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+    
+    .logo{
+        width: 45%; 
+        margin-bottom: 30px; 
+    }
+    
+
+    .logo {
+        width: 100%; 
+        text-align: center;
+        padding: 0;
+    }
+    
+    .logo-text {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+.logo {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+   .logo-title {
+        margin-bottom: 10px;
+    }
+
+   
+    .footer-links {
+        display: inline-block; 
+        text-align: right; 
+    }
+    
+   
+    .payment-social {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

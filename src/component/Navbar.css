@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar-container{
+    display: flex;
+   justify-content:space-around;
+   background-color:rgba(61, 70, 77, 1);
+   color:white;
+   direction: rtl;
+  font-family: "Cairo", sans-serif;
+  position: relative;
+
+}
+.dash{
+    color: rgba(233, 146, 57, 1);
+  
+    
+}
+.nav-links{
+    display: flex;
+    gap:5px;
+    list-style: none;
+    margin: auto 1px;
+    margin-right:-60px;
+    
+  
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+.search-section{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: -70px;
+
+}
+.search-section input{
+    border: none ;
+    padding: 5px 10px;
+    width: 250px;
+    height: 25px;
+    border-radius: 0 6px 6px 0px ;
+    outline: none;
+}
+.search-section button{
+    background-color:rgba(233, 146, 57, 1);
+    border:none;
+  
+    COLOR:white;
+
+}
+.language{
+    display: flex;
+  margin:  35PX 20px ; 
+  margin-left: -80px;
+}
+.language select{
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px ;
+    font-weight: 500;
+    direction: ltr;
+   
+   
+}
+.menu-icon{
+    display: none;
+    font-size: 28px;
+    z-index:30;
+    margin-top: 40px;
+    margin-left: -150px;
+  
+   
+}
+.icon{
+    display: flex;
+    align-items: center;
+    color:white;
+    gap:20px;
+    font-size: 20px;
+    direction: ltr;
+    margin-left:-90px;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    
+    margin-left:-70px;
+   
+    
+}
+@media (max-width: 992px) {
+  .nav-links,
+  .search-section,
+  .language,
+  .icon {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+   
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #2d2d2d;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    gap: 15px;
+    border-top: 2px solid #f39c12;
+  }
+  .nav-links.active{
+    display: flex;
+    z-index:1000!important;
+    position: fixed!important;
+    width: 100%;
+    top:0;
+
+  }
+ .nav-links li { 
+    padding: 10px 20px;
+ }
+ .logo{
+  margin-right: -100px;
+
+ }
+}
