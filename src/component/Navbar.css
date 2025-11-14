@@ -51,7 +51,7 @@ body{
 .search-section button{
     background-color:rgba(233, 146, 57, 1);
     border:none;
-  
+   padding: 9px;
     COLOR:white;
 
 }
