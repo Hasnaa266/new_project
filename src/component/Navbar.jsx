@@ -7,7 +7,7 @@ function Navbars() {
     const[menuopen,setmenuopen]=useState(false);
     return(
         <nav className="navbar-container">
-          < ul className={`nav-links ${menuopen ? "active" : ""}`}>
+          <ul className={`nav-links ${menuopen ? "active" : ""}`}>
                 <li ><Link to='/' onClick={()=>setmenuopen(false)}>الرئيسية</Link></li>
                 <span className='dash'>|</span>
                 <li > <Link to='/books' onClick={()=>setmenuopen(false)}>جميع الكتب </Link></li>
