@@ -1,4 +1,4 @@
-import { booksData } from "../data/api";
+import { booksData } from "../data/Api";
 
 const BookCard = ({ book }) => {
   return (
