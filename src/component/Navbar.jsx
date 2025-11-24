@@ -14,7 +14,7 @@ function Navbars() {
                  <span className='dash' >|</span>
                 <li><Link to='/Products' onClick={()=>setmenuopen(false)}>المنتجات الجديدة</Link></li>
                  <span className='dash'>|</span>
-                <li><Link to='/nn' onClick={()=>setmenuopen(false)}>المذكرات</Link></li>
+                <li><Link to='/Nots' onClick={()=>setmenuopen(false)}>المذكرات</Link></li>
                  <span className='dash'>|</span>
                 <li><Link to='المراجعات' onClick={()=>setmenuopen(false)}>المراجعات</Link></li>
             </ul>

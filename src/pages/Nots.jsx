@@ -1,6 +1,3 @@
-
-import React from "react";
-import "./Books.css";
 import { booksData } from "../data/api";
 
 const BookCard = ({ book }) => {
@@ -31,10 +28,10 @@ const BookCard = ({ book }) => {
   );
 };
 
-export default function Books() {
+export default function Nots() {
   return (
     <div className="books-container">
-        <h1 style={{textAlign:"right" }}>جميع الكتب </h1>
+        <h1 style={{textAlign:"right"}}>المذكرات </h1>
       <h2 className="main-title">عرض جميع الكتب</h2>
 
       <div className="books-grid">

@@ -1,0 +1,87 @@
+.review {
+  display: flex; 
+  justify-content: center; 
+  background-color: #363a3d; 
+  padding: 80px 0;
+  min-height: 450px;
+ 
+}
+.review-card {
+  display: flex;
+  direction: ltr; 
+  gap: 50px; 
+  max-width: 1100px; 
+  width: 90%;
+  align-items: center; 
+}
+
+.deta {
+  flex: 1.5; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.retitle {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+.Subtitle {
+  display: block; 
+  font-size: 1.8rem;
+  color: #e6984e;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.boddy{
+  color: #cccccc; 
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+.action {
+  background-color: #e6984e; 
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  align-self: flex-end;
+}
+
+.action:hover {
+  background-color: #cc8442;
+}
+
+
+.bookdisplay {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.bookgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px;
+}
+
+.bookitem {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+  border-radius: 4px;
+}
+
